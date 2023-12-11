@@ -16,3 +16,6 @@ ng g c menu
 
 -Comando para Criar Serviço (Cria no diretorio do lado do app.module.ts)
 ng g s produto
+
+-Comando para gerar guard, responsavel pela restriçao dos arquivos
+ng generate guard
