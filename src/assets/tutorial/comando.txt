@@ -1,2 +1,18 @@
-Pra rodar o db em Json
+-Comando para instalar live server para watch do swagger
+npm install -g live-server
+
+-Comando para vizualisar api pelo swagger
+live server
+
+-Comando para instalar o json-server
+npm install -g json-server
+
+-Comando para rodar o json DB
 json-server --watch dbgames.json
+
+-Comando para Criar componentes
+ng generate component menu
+ng g c menu
+
+-Comando para Criar Serviço (Cria no diretorio do lado do app.module.ts)
+ng g s produto
