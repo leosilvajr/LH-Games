@@ -1,0 +1,2 @@
+Pra rodar o db em Json
+json-server --watch dbgames.json
