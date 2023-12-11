@@ -1,27 +1,49 @@
-# LojaGames
+# LH-Games
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Este projeto é um aplicativo Angular que implementa um CRUD (Create, Read, Update, Delete) baseado em um arquivo JSON. Ele utiliza Angular Material, Bootstrap e inclui um componente de login com as credenciais pré-definidas.
 
-## Development server
+## Instalação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para configurar e executar o projeto localmente, siga estes passos:
 
-## Code scaffolding
+1. Certifique-se de ter o Node.js e o npm instalados em sua máquina.
+2. Clone este repositório do GitHub:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   ```bash
+   git clone https://github.com/seu-usuario/lh-games.git
 
-## Build
+1. Navegue até o diretório do projeto:
+   ```bash
+   cd lh-games
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Instale as dependências do projeto:
+   ```bash
+   npm install
 
-## Running unit tests
+## Executando o Servidor JSON
+Para utilizar o servidor JSON necessário para o funcionamento do CRUD, é preciso executar o JSON Server. Caso não o tenha instalado globalmente, execute o seguinte comando:
+     npm install -g json-server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Em seguida, inicie o servidor JSON:
+json-server --watch db.json
 
-## Running end-to-end tests
+Isso iniciará o servidor na porta padrão 3000.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Utilização
+Após a instalação e a execução do servidor JSON, você pode rodar o aplicativo Angular. Utilize o seguinte comando:
+ng serve
 
-## Further help
+Isso iniciará o aplicativo na porta padrão 4200. Abra o seu navegador e acesse http://localhost:4200 para visualizar o aplicativo.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Credenciais de Login
+O componente de login utiliza as seguintes credenciais:
+
+Usuário: admin
+Senha: admin
+Certifique-se de usar essas credenciais para acessar o sistema de login.
+
+Tecnologias Utilizadas
+Angular
+Angular Material
+Bootstrap
+JSON Server
